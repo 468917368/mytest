@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功</title>
+
+
+    <style>
+        :root {
+            --primary: #2c3e50;      /* 主色调-深海蓝 */
+            --secondary: #7f8c8d;    /* 辅助色-岩石灰 */
+            --accent: #3498db;       /* 强调色-科技蓝 */
+            --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #f9f9f9 linear-gradient(45deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-weight: 300;
+            font-size: 2.8rem;
+            letter-spacing: -0.05em;
+            margin-bottom: 2rem;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: var(--accent);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>成功进入系统内部</h1>
+</body>
+</html>
